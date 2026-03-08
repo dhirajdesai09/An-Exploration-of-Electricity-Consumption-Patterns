@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricity Consumption Analytics</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(120deg,#eef2ff,#f8fafc,#e0e7ff);
+}
+
+.navbar{
+backdrop-filter:blur(12px);
+background:rgba(255,255,255,0.8);
+}
+
+.dashboard-box{
+border-radius:20px;
+overflow:hidden;
+background:white;
+box-shadow:0 25px 50px rgba(0,0,0,0.15);
+padding:20px;
+margin-bottom:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar fixed top-0 w-full shadow-lg z-50">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+<div class="flex items-center space-x-2">
+<i class="fa-solid fa-bolt text-yellow-500 text-2xl"></i>
+<span class="font-extrabold text-xl">
+Power<span class="text-indigo-600">Insights</span>
+</span>
+</div>
+
+<nav class="space-x-8 hidden md:flex font-medium">
+<a href="#home">Home</a>
+<a href="#dashboard1">Dashboard 1</a>
+<a href="#dashboard2">Dashboard 2</a>
+<a href="#dashboard3">Dashboard 3</a>
+<a href="#story">Story</a>
+<a href="#insights">Insights</a>
+</nav>
+
+</div>
+
+</header>
+
+<main class="pt-24">
+
+<section id="home" class="max-w-7xl mx-auto text-center px-6 py-24">
+
+<h1 class="text-6xl font-extrabold text-gray-800 leading-tight">
+Electricity Consumption <br>
+<span class="text-indigo-600">Data Analytics</span>
+</h1>
+
+<p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">
+This project analyzes electricity consumption patterns across India using interactive Tableau dashboards.
+</p>
+
+<a href="#dashboard1"
+class="mt-10 inline-block bg-indigo-600 text-white px-8 py-3 rounded-xl shadow-lg hover:bg-indigo-700">
+Explore Dashboards
+</a>
+
+</section>
+
+
+<section id="dashboard1" class="max-w-7xl mx-auto px-6 py-16">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Electricity Overview
+</h2>
+
+<div class="dashboard-box">
+
+<div class='tableauPlaceholder'>
+<object class='tableauViz' style='width:100%;height:800px;'>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='name' value='Energy_Consumption_DD_Dashboard1/Dashboard1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+</object>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="dashboard2" class="max-w-7xl mx-auto px-6 py-16">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Consumption Trends
+</h2>
+
+<div class="dashboard-box">
+
+<div class='tableauPlaceholder'>
+<object class='tableauViz' style='width:100%;height:800px;'>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='name' value='Energy_Consumption_DD_Dashboard2/Dashboard2' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+</object>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="dashboard3" class="max-w-7xl mx-auto px-6 py-16">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+State-wise Consumption
+</h2>
+
+<div class="dashboard-box">
+
+<div class='tableauPlaceholder'>
+<object class='tableauViz' style='width:100%;height:800px;'>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='name' value='Energy_Consumption_DD_Dashboard3/Dashboard3' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+</object>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="story" class="max-w-7xl mx-auto px-6 py-16">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Data Story
+</h2>
+
+<div class="dashboard-box">
+
+<div class='tableauPlaceholder'>
+<object class='tableauViz' style='width:100%;height:800px;'>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='name' value='Energy_Consumption_DD_Story1/Story1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+</object>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="insights" class="max-w-7xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold text-center mb-14">
+Key Insights
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<i class="fa-solid fa-chart-line text-indigo-600 text-3xl mb-4"></i>
+<h3 class="font-bold text-xl mb-2">Growing Demand</h3>
+<p class="text-gray-600">
+Electricity consumption is increasing due to urbanization and industrial growth.
+</p>
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<i class="fa-solid fa-industry text-indigo-600 text-3xl mb-4"></i>
+<h3 class="font-bold text-xl mb-2">Industrial Usage</h3>
+<p class="text-gray-600">
+Industries contribute a significant share of electricity consumption across India.
+</p>
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<i class="fa-solid fa-map text-indigo-600 text-3xl mb-4"></i>
+<h3 class="font-bold text-xl mb-2">Regional Distribution</h3>
+<p class="text-gray-600">
+Western and Southern states dominate electricity consumption due to higher economic activity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="bg-gray-900 text-gray-400 text-center py-6">
+© 2026 PowerInsights | Tableau Electricity Consumption Analysis
+</footer>
+
+<script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+
+</body>
+</html>
